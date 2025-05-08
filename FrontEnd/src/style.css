@@ -1,0 +1,194 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap'); 
+html {
+  scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    background-color: #e2f5fc;
+    color: #003366;
+    
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 70px;
+    /*background-color: rgb(77, 145, 182);*/
+    background: linear-gradient(90deg, rgb(33, 79, 158) , rgb(120, 161, 186) , rgb(161, 187, 224));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  body {
+    margin: 0;
+    padding-top: 70px; /* Match the height of nav to prevent overlap */
+    
+  }
+  
+  nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    
+  }
+  
+  nav ul li {
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #020e1a; /* Optional: match the nav text color */
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  nav ul li a:hover {
+    text-decoration-thickness: 24px ;
+    font-size: 25px;
+    color: #554aea; /* Or any hover color */
+  }
+  
+  
+  .hero-video {
+    margin-top: 70px;
+    height: 900px; /* or 800px depending on your screen */
+    overflow: hidden;
+  }
+  
+  .hero-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+  
+   .functionalities, .categories {
+    padding: 2rem;
+    text-align: center;
+    font-size: 20px;
+    justify-content: center;
+    align-content: center;
+    
+  }
+  
+  .intro{
+    text-align: center;
+    font-size: 20px;
+    justify-content: center;
+    align-content: center;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    
+  }
+  .categories {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .category-box {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 51, 102, 0.2);
+    background-color: white;
+    transition: transform 0.3s;
+  }
+
+  .categories-section {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .categories-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #003366;
+  }
+  .category-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .category-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .category-box p {
+    padding: 1rem;
+    font-weight: bold;
+  }
+  .datainfo{
+    text-align: center;
+    font-size: 20px;
+    justify-content: center;
+    align-content: center;
+    margin-right: 7rem;
+    margin-left: 7rem;
+  }
+
+  .test-section {
+    padding: 2rem;
+    text-align: center;
+    background-color: #e6f2ff;
+    border-radius: 12px;
+    margin: 2rem auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .upload-input {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .preview-container {
+    margin-top: 1rem;
+  }
+  
+  .preview-image {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  }
+  
+  .predict-button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .predict-button:hover {
+    background-color: #00509e;
+  }

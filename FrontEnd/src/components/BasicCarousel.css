@@ -1,0 +1,118 @@
+/*.fullwidth-carousel {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 100%;             
+  transition: transform 1s ease-in-out;  
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.slide-image {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  display: block;
+}*/
+/* BasicCarousel.css */
+/*
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.fullwidth-carousel {
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 80vh; 
+  margin-left: calc((100% - 100vw) / 2);
+}
+
+.slides {
+  display: flex;
+  transition: transform 1s ease;
+  height: 100%;
+}
+
+.slide {
+  min-width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  display: block;
+  background-color: #f4f4f4;
+}
+
+.caption {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #003366;
+  text-align: center;
+}*/
+/* FlashcardCarousel.css */
+.flashcard-strip {
+  width: 100vw;
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #f0f8ff;
+}
+
+.card-track {
+  display: flex;
+  animation: scroll-cards 30s linear infinite;
+}
+
+.card {
+  flex: 0 0 60vw;
+  height: 70vh;
+  margin: 0 2vw;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e1364a;
+  padding-bottom: 1rem;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+@keyframes scroll-cards {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
