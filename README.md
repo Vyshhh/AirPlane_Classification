@@ -2,11 +2,7 @@
 
 This project provides an end-to-end solution for classifying and detecting aircraft types—**civilian**, **military**, and **unmanned aerial vehicles (UAVs)**—from images and videos. It combines **YOLOv8-based annotation**, **CNN-based classification (EfficientNet & ResNet)**, and a planned **hybrid re-training pipeline** for UAV detection.
 
-## Overview
-
-Due to the massive size of the aircraft dataset, manual annotation was impractical. We began with **automatic annotation using YOLOv8** (detecting COCO class 4: airplane) and grouped images into three categories. Since YOLO struggled with UAVs, we trained **EfficientNet and ResNet classifiers** which performed well without needing bounding boxes. These classifiers will now assist in labeling UAVs to further **retrain YOLO** for comprehensive detection.
-
-## ⚙Preprocessing Pipeline
+## Preprocessing Pipeline
 
 ### Image Resizing
 
@@ -73,6 +69,14 @@ python ResNet.py
 **Best model accuracy:**
 * **Train:** ~96%
 * **Validation:** ~86%
+
+## Front End
+
+Our Frontend of "Airplane Classifier using Deep Learning Models" classifies aircraft into civilian, military, and drone categories. The system features a user-friendly web interface built with React, HTML and CSS, allowing users to upload images through an intuitive form with loading indicators and immediate feedback. When images are submitted, they're processed via FormData, sent to the backend using axios, and the deep learning model's predictions are displayed alongside the original image with error handling for a seamless experience that combines technical depth with practical usability.
+
+## Back End
+
+The backend is built using Node.js and Express to handle HTTP requests and manage server-side logic. It uses Multer middleware to receive and store the uploaded image in the server’s uploads/ directory. Once the image is saved, the backend triggers a Python script of ML model (EfficientNet) passing the image path as input. The prediction result, along with the image path and timestamp, is saved into a MongoDB collection using Mongoose. Finally, the backend sends the prediction data back to the frontend in a structured JSON response.
 
 ## Results Visualization
 
