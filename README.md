@@ -1,6 +1,7 @@
 # Aircraft Classification and Detection Pipeline
 
-This project provides an end-to-end solution for classifying and detecting aircraft types—**civilian**, **military**, and **unmanned aerial vehicles (UAVs)**—from images and videos. It combines **YOLOv8-based annotation**, **CNN-based classification (EfficientNet & ResNet)**, and a planned **hybrid re-training pipeline** for UAV detection.
+This project provides an end-to-end solution for classifying and detecting aircraft types—**civilian**, **military**, and **unmanned aerial vehicles (UAVs)**—from images and videos. It combines **YOLOv8-based annotation**, **CNN-based classification (EfficientNet & ResNet)**, and a planned **hybrid re-training pipeline** for UAV detection.  
+Our dataset has 3 classes(Civilian, military, UAV) and each consisting of approx 60k images. Since we have a very large dataset we used DGXA100 GPU. 
 
 ## Preprocessing Pipeline
 
